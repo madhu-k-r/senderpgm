@@ -39,15 +39,5 @@ public class SenderpgmController {
 		log.info(jsonObject+" "+msg);
 		return jsonObject.toString()+" "+msg;
 	}
-	@RequestMapping("/message")
-	public String receiver() throws JSONException
-	{
-
-		JSONObject jsonObject = new JSONObject();
-		jsonObject.put(" ", restTemplate.exchange("http://receiverpgm-git-receiver-and-sender.apps.lab.tayana.in/sent", HttpMethod.GET,null,String.class).getBody());
-		log.info("Receiver message "+jsonObject);
-		System.out.println(jsonObject);
-		return jsonObject.toString();
-	}
 }
 
