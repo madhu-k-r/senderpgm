@@ -44,7 +44,7 @@ public class SenderpgmController {
 	{
 
 		JSONObject jsonObject = new JSONObject();
-		jsonObject.put(" ", restTemplate.exchange("http://localhost:8082/sent", HttpMethod.GET,null,String.class).getBody());
+		jsonObject.put(" ", restTemplate.exchange("http://receiverpgm-git-receiver-and-sender.apps.lab.tayana.in/sent", HttpMethod.GET,null,String.class).getBody());
 		log.info("Receiver message "+jsonObject);
 		System.out.println(jsonObject);
 		return jsonObject.toString();
