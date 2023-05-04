@@ -43,9 +43,6 @@
 	<build>
 		<plugins>
 			<plugin>
-				      <groupId>io.openshift</groupId>
-				      <artifactId>openshift-maven-plugin</artifactId>
-				      <version>4.7.0</version>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
